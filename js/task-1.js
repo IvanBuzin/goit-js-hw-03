@@ -1,6 +1,5 @@
 function slugify(title) {
    return String(title).toLowerCase().split(" ").join("-");
-
 }
 
 
