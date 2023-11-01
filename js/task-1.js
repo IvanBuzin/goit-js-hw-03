@@ -1,6 +1,6 @@
 function slugify(title) {
-    slug = String(title).toLowerCase().split(" ").join("-");
-    return slug; 
+   return String(title).toLowerCase().split(" ").join("-");
+
 }
 
 
