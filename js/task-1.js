@@ -1,6 +1,8 @@
 function slugify(title) {
-    return String(title).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').trim().toLowerCase().replace(/[^a-z0-9 -]/g, '').replace(/\s+/g, '-').replace(/-+/g, '-'); 
+    slug = String(title).toLowerCase().split(" ").join("-");
+    return slug; 
 }
+
 
 console.log(slugify("Arrays for begginers")); // "arrays-for-begginers"
 console.log(slugify("English for developer")); // "english-for-developer"
